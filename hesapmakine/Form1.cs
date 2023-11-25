@@ -22,12 +22,12 @@ namespace hesapmakine
         }
 
         // Minimize and close buttons
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
@@ -262,5 +262,31 @@ namespace hesapmakine
             
 
         }
+
+        int mouseX, mouseY;
+
+       
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.Left = MousePosition.X - mouseX;
+            this.Top=MousePosition.Y - mouseY;
+        }
+
+        private void label5_MouseDown(object sender, MouseEventArgs e)
+        {
+
+            mouseX = MousePosition.X - mouseX;
+            mouseY = MousePosition.Y - mouseY;
+            timer1.Enabled = true;
+        }
+
+        private void label5_MouseUp(object sender, MouseEventArgs e)
+        {
+            timer1.Enabled = false;
+        }
+
+
+
     }
 }
