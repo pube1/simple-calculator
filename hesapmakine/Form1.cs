@@ -21,7 +21,7 @@ namespace hesapmakine
 
         }
 
-        // Kapatma ve küçültme tuşları
+        // Minimize and close buttons
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -32,7 +32,7 @@ namespace hesapmakine
             this.WindowState = FormWindowState.Minimized;
         }
 
-        // Rakam tuşları
+        // Number Buttons
         private void button3_Click(object sender, EventArgs e)
         {
             if (label2.Text == "0")
@@ -40,11 +40,11 @@ namespace hesapmakine
                 label2.Text = "";
             }
 
-            string sayi = label2.Text;
+            string issue = label2.Text;
 
-            sayi = sayi + "1";
+            issue = issue + "1";
 
-            label2.Text = sayi;
+            label2.Text = issue;
 
         }
 
@@ -55,11 +55,11 @@ namespace hesapmakine
                 label2.Text = "";
             }
 
-            string sayi = label2.Text;
+            string issue = label2.Text;
 
-            sayi = sayi + "2";
+            issue = issue + "2";
 
-            label2.Text = sayi;
+            label2.Text = issue;
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -69,11 +69,11 @@ namespace hesapmakine
                 label2.Text = "";
             }
 
-            string sayi = label2.Text;
+            string issue = label2.Text;
 
-            sayi = sayi + "3";
+            issue = issue + "3";
 
-            label2.Text = sayi;
+            label2.Text = issue;
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -83,11 +83,11 @@ namespace hesapmakine
             {
                 label2.Text = "";
             }
-            string sayi = label2.Text;
+            string issue = label2.Text;
 
-            sayi = sayi + "4";
+            issue = issue + "4";
 
-            label2.Text = sayi;
+            label2.Text = issue;
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -97,11 +97,11 @@ namespace hesapmakine
             {
                 label2.Text = "";
             }
-            string sayi = label2.Text;
+            string issue = label2.Text;
 
-            sayi = sayi + "5";
+            issue = issue + "5";
 
-            label2.Text = sayi;
+            label2.Text = issue;
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -111,11 +111,11 @@ namespace hesapmakine
             {
                 label2.Text = "";
             }
-            string sayi = label2.Text;
+            string issue = label2.Text;
 
-            sayi = sayi + "6";
+            issue = issue + "6";
 
-            label2.Text = sayi;
+            label2.Text = issue;
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -125,11 +125,11 @@ namespace hesapmakine
             {
                 label2.Text = "";
             }
-            string sayi = label2.Text;
+            string issue = label2.Text;
 
-            sayi = sayi + "7";
+            issue = issue + "7";
 
-            label2.Text = sayi;
+            label2.Text = issue;
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -139,11 +139,11 @@ namespace hesapmakine
             {
                 label2.Text = "";
             }
-            string sayi = label2.Text;
+            string issue = label2.Text;
 
-            sayi = sayi + "8";
+            issue = issue + "8";
 
-            label2.Text = sayi;
+            label2.Text = issue;
         }
 
         private void button11_Click(object sender, EventArgs e)
@@ -154,35 +154,35 @@ namespace hesapmakine
                 label2.Text = "";
             }
 
-            string sayi = label2.Text;
+            string issue = label2.Text;
 
-            sayi = sayi + "9";
+            issue = issue + "9";
 
-            label2.Text = sayi;
+            label2.Text = issue;
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
             
-            string sayi = label2.Text;
+            string issue = label2.Text;
 
-            sayi = sayi + "0";
+            issue = issue + "0";
 
-            label2.Text = sayi;
+            label2.Text = issue;
         }
 
-        // İşlem tuşları
+        // Operation Buttons
         private void button13_Click(object sender, EventArgs e)
         {
             
-            int ilksayi=0;
+            int firstissue=0;
 
  
             label4.Text = "+";
 
 
-            ilksayi = Convert.ToInt32(label2.Text);
-            label3.Text = Convert.ToString(ilksayi);
+            firstissue = Convert.ToInt32(label2.Text);
+            label3.Text = Convert.ToString(firstissue);
             label2.Text = "0";
             
             
@@ -190,74 +190,74 @@ namespace hesapmakine
 
         private void button15_Click(object sender, EventArgs e)
         {
-            int ilksayi = 0;
+            int firstissue = 0;
 
 
             label4.Text = "/";
 
 
-            ilksayi = Convert.ToInt32(label2.Text);
-            label3.Text = Convert.ToString(ilksayi);
+            firstissue = Convert.ToInt32(label2.Text);
+            label3.Text = Convert.ToString(firstissue);
             label2.Text = "";
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
-            int ilksayi = 0;
+            int firstissue = 0;
 
 
             label4.Text = "-";
 
 
-            ilksayi = Convert.ToInt32(label2.Text);
-            label3.Text = Convert.ToString(ilksayi);
+            firstissue = Convert.ToInt32(label2.Text);
+            label3.Text = Convert.ToString(firstissue);
             label2.Text = "";
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
-            int ilksayi = 0;
+            int firstissue = 0;
 
 
             label4.Text = "*";
 
 
-            ilksayi = Convert.ToInt32(label2.Text);
-            label3.Text = Convert.ToString(ilksayi);
+            firstissue = Convert.ToInt32(label2.Text);
+            label3.Text = Convert.ToString(firstissue);
             label2.Text = "";
         }
         
-        // Temizleme tuşu
+        // Clear button
         private void button18_Click(object sender, EventArgs e)
         {
             label3.Text = "0";
             label2.Text = "0";
         }
 
-        // İşlem sonucu
+        // Equal button
         private void button17_Click(object sender, EventArgs e)
         {
-            int ikincisayi = Convert.ToInt32(label2.Text);
-            int ilksayi = Convert.ToInt32(label3.Text);
+            int secondissue = Convert.ToInt32(label2.Text);
+            int firstissue = Convert.ToInt32(label3.Text);
             
             if (label4.Text == "+")
             {
-                label2.Text = Convert.ToString(ilksayi+ikincisayi);
+                label2.Text = Convert.ToString(firstissue+secondissue);
             }
 
             else if (label4.Text == "-")
             {
-                label2.Text = Convert.ToString(ilksayi-ikincisayi);
+                label2.Text = Convert.ToString(firstissue-secondissue);
             }
 
             else if (label4.Text == "*")
             {
-                label2.Text = Convert.ToString(ilksayi*ikincisayi);
+                label2.Text = Convert.ToString(firstissue*secondissue);
             }
 
             else if (label4.Text == "/")
             {
-                label2.Text = Convert.ToString(ilksayi/ikincisayi);
+                label2.Text = Convert.ToString(firstissue/secondissue);
             }
             
 
