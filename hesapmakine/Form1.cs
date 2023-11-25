@@ -219,7 +219,7 @@ namespace hesapmakine
             int ilksayi = 0;
 
 
-            label4.Text = "-";
+            label4.Text = "*";
 
 
             ilksayi = Convert.ToInt32(label2.Text);
