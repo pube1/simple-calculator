@@ -447,7 +447,7 @@ namespace hesapmakine
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(0, 385);
+            this.label6.Location = new System.Drawing.Point(0, 382);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 16);
             this.label6.TabIndex = 29;
