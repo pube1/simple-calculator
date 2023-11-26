@@ -184,6 +184,8 @@ namespace hesapmakine
             firstissue = Convert.ToInt32(label2.Text);
             label3.Text = Convert.ToString(firstissue);
             label2.Text = "0";
+
+
             
             
         }
@@ -242,22 +244,26 @@ namespace hesapmakine
             
             if (label4.Text == "+")
             {
-                label2.Text = Convert.ToString(firstissue+secondissue);
+                label3.Text = Convert.ToString(firstissue+secondissue);
+                label2.Text = "0";
             }
 
             else if (label4.Text == "-")
             {
-                label2.Text = Convert.ToString(firstissue-secondissue);
+                label3.Text = Convert.ToString(firstissue-secondissue);
+                label2.Text = "0";
             }
 
             else if (label4.Text == "*")
             {
-                label2.Text = Convert.ToString(firstissue*secondissue);
+                label3.Text = Convert.ToString(firstissue*secondissue);
+                label2.Text = "0";
             }
 
             else if (label4.Text == "/")
             {
-                label2.Text = Convert.ToString(firstissue/secondissue);
+                label3.Text = Convert.ToString(firstissue/secondissue);
+                label2.Text = "0";
             }
             
 
@@ -279,6 +285,18 @@ namespace hesapmakine
             mouseX = MousePosition.X - mouseX;
             mouseY = MousePosition.Y - mouseY;
             timer1.Enabled = true;
+        }
+
+        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseX = MousePosition.X - mouseX;
+            mouseY = MousePosition.Y - mouseY;
+            timer1.Enabled = true;
+        }
+
+        private void Form1_MouseUp(object sender, MouseEventArgs e)
+        {
+            timer1.Enabled = false;
         }
 
         private void label5_MouseUp(object sender, MouseEventArgs e)
