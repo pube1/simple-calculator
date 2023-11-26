@@ -451,7 +451,7 @@ namespace hesapmakine
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 16);
             this.label6.TabIndex = 29;
-            this.label6.Text = "v1.0.1";
+            this.label6.Text = "v1.0.2";
             // 
             // Form1
             // 
